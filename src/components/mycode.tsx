@@ -4,6 +4,12 @@
 import { useEffect, useState } from "react";
 import { TextField } from "@mui/material";
 
+
+interface Memes {
+  url : string,
+  name : string
+}
+
 export const Code = () => {
 
 
@@ -13,7 +19,7 @@ export const Code = () => {
     img: "https://i.imgflip.com/30b1gx.jpg",
   });
 
-  const [memes, setMemes] = useState([]);
+  const [memes, setMemes] = useState<Memes[]>([]);
 
   useEffect(() => {
     const fetchMemes = async () => {
