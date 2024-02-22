@@ -26,7 +26,6 @@ export const Code = () => {
     fetchMemes();
   }, []);
 
-  console.log(meme);
 
   const handleChange = (e: any) => {
     setMeme({
@@ -37,7 +36,6 @@ export const Code = () => {
 
   const handleClick = () => {
     // randomly select a image from the memes array
-    console.log(memes);
 
     const randomImage = Math.floor(Math.random() * memes.length + 1);
 

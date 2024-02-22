@@ -6,7 +6,7 @@ import { Code } from "@/components/mycode";
 export default function Home() {
   return (
     <div className="content-center">
-      <WavyBackground children={<Code />} containerClassName="overflow-hidden" />
+      <WavyBackground  containerClassName="overflow-hidden"><Code/> </WavyBackground>
     </div>
   );
 }
