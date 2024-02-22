@@ -101,7 +101,6 @@ export const Code = () => {
     Lit up borders
   </div>
 </button> */}
-{console.log(meme.topText)}
         <div className="mt-8 flex justify-center items-center w-full relative">
           <span className="absolute z-10 top-4 leading-6 font-medium text-xl">
             {meme.topText}
