@@ -67,7 +67,7 @@ export const Code = () => {
           focused
           sx={{
             input: { color: 'white' },
-            marginBottom: "4rem"
+            marginBottom: "2rem"
           }}
           className="w-1/2 mb-4"
         />
