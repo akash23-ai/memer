@@ -101,14 +101,14 @@ export const Code = () => {
     Lit up borders
   </div>
 </button> */}
-
+{console.log(meme.topText)}
         <div className="mt-8 flex justify-center items-center w-full relative">
-          <span className="absolute top-4 leading-6 font-medium text-xl">
+          <span className="absolute z-10 top-4 leading-6 font-medium text-xl">
             {meme.topText}
           </span>
           <img src={meme.img} alt="" className="w-[35rem] h-[25rem] contrast-125" />
 
-          <span className="absolute bottom-4 leading-6 font-medium text-xl">
+          <span className="absolute z-10 bottom-4 leading-6 font-medium text-xl">
             {meme.bottomText}
           </span>
         </div>
