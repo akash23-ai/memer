@@ -69,7 +69,7 @@ export const Code = () => {
             input: { color: 'white' },
             marginBottom: "2rem"
           }}
-          className="w-1/2 mb-4"
+          className="w-1/2"
         />
         <TextField
           id="outlined-basic"
@@ -79,10 +79,10 @@ export const Code = () => {
           name="bottomText"
           sx={{
             input: { color : "white"},
-            marginBottom: "4rem"
+            marginBottom: "2rem"
           }}
           focused
-          className="w-1/2 mb-4"
+          className="w-1/2"
         />
 
 
