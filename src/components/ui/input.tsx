@@ -1,6 +1,6 @@
 "use client"
 
-const Input = ({onChange, text, htmlFor}) => {
+const Input = ({onChange, text, htmlFor}:{onChange : () => void, text : string, htmlFor : string}) => {
   return (
     <div className="w-1/2 mb-4">
       <label
