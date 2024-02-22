@@ -56,7 +56,7 @@ export const Code = () => {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <div className="w-1/2 min-h-96 h-1/2 flex flex-col items-center ">
+      <div className="w-1/2 min-h-96 h-1/2 flex flex-col items-center">
         <TextField
           id="outlined-basic"
           label="Top Text"
@@ -66,7 +66,8 @@ export const Code = () => {
           color="secondary"
           focused
           sx={{
-            input: { color: 'white' }
+            input: { color: 'white' },
+            marginBottom: "4rem"
           }}
           className="w-1/2 mb-4"
         />
@@ -78,9 +79,10 @@ export const Code = () => {
           name="bottomText"
           sx={{
             input: { color : "white"},
+            marginBottom: "4rem"
           }}
           focused
-          className="w-1/2 mb-4 "
+          className="w-1/2 mb-4"
         />
 
 
