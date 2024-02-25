@@ -1,14 +1,14 @@
-This is a  Site to Generate Memes with text on top of them.
+# This is a  Site to Generate Memes with text on top of them.
 
-Feel Free To do whatever you what..
+# Feel Free To do whatever you what..
 
 
-# If You Whant to Run This Locally Then Follow the Steps
-## Clone / fork the Repo 
+## If You Whant to Run This Locally Then Follow the Steps
+### Clone / fork the Repo 
 
-# Do a npm/yarn install 
+### Do a npm/yarn install 
 
-# Then run the development server:
+### Then run the development server:
 
 ```bash
 npm run dev
