@@ -1,7 +1,7 @@
 "use client"
 
 // import Input from "@/components/ui/input";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { TextField } from "@mui/material";
 
 
@@ -20,6 +20,9 @@ export const Code = () => {
   });
 
   const [memes, setMemes] = useState<Memes[]>([]);
+
+
+  const canvasRef = React.createRef<HTMLCanvasElement>();
 
   useEffect(() => {
     const fetchMemes = async () => {
@@ -51,6 +54,21 @@ export const Code = () => {
     });
   };
 
+
+
+// For embeding the text on the image
+
+  // const imgLoad = () => {
+  // const canvas = canvasRef.current;
+
+  // if(canvas){
+  //   const ctx = canvas.getContext("2d");
+
+  //   ctx?.drawImage(canvas, 0, 0);
+  // }
+
+  // console.log(canvas);
+  // }
 
 
 
@@ -105,7 +123,8 @@ export const Code = () => {
           <span className="absolute z-10 top-4 leading-6 font-medium text-xl">
             {meme.topText}
           </span>
-          <img src={meme.img} alt="" className="w-[35rem] h-[25rem] contrast-125" />
+          <img src={meme.img} alt="" className="w-[35rem] h-[25rem] contrast-125"/>
+          {/* <canvas width="400" height="150" ref={canvasRef}></canvas> */}
 
           <span className="absolute z-10 bottom-4 leading-6 font-medium text-xl">
             {meme.bottomText}
